@@ -6,7 +6,7 @@ const calcularFrete = async (product) => {
   const openai = new OpenAI({
     baseURL: "https://openrouter.ai/api/v1",
     // Recomenda-se usar process.env.OPENROUTER_API_KEY
-    apiKey:  "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", 
+    apiKey: process.env.OPEN_API_key, 
   });
 
   try {
